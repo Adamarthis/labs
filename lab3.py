@@ -1,6 +1,6 @@
 class Planet:  # Конструкторний клас для планет
     def __init__(self, name, mass, radius, rotation_period, orbital_period, distance_from_sun, planet_type,
-                 surface_temperature, degree, number_of_moons):
+                 surface_temperature, degree, number_of_moons, atmosphere, satellite):
         self.name = name
         self.mass = mass
         self.radius = radius
@@ -11,6 +11,8 @@ class Planet:  # Конструкторний клас для планет
         self.surface_temperature = surface_temperature
         self.degree = degree
         self.number_of_moons = number_of_moons
+        self.atmosphere = atmosphere
+        self.satellite = satellite
 
 
 class Atmosphere:  # Конструкторний клас для атмосфер
@@ -73,24 +75,27 @@ class SolarSystem:  # Конструкторний клас для систем
         self.age = age
 
 
-# Створюю планети
-Mercury = Planet("Меркурій", "3.3011 × 10²³ кг", 2439.7, 58.6, 88, 57.9, "Скеляста", 167, 0, 0)
-Venus = Planet("Венера", "4.8675 × 10²⁴ кг", 6051.8, 243, 225, 108.2, "Скеляста", 465, 177.4, 0)
-Earth = Planet("Земля", "5.972 × 10²⁴ кг", 6371, 24, 365, 149.6, "Скеляста", 15, 23.5, 1)
+# Створюю супутники
+Moon = Satellite("Місяць", 384400, "7.34 × 10²² кг", 27.3, -53, "твердий", "Земля", 4.5, False, 0.384)
+Europa = Satellite("Європа", 670900, "4.80 × 10²² кг", 3.5, -160, "лідний", "Юпітер", 4.5, True, 0.628)
+Titan = Satellite("Титан", 1221700, "1.35 × 10²³ кг", 15.9, -179, "газовий", "Сатурн", 4.5, True, 1.222)
+
 # Створюю атмосфери
 EarthAtmosphere = Atmosphere("Азот (78%), Кисень (21%), Інші гази (1%)", 100, 15, 1.225, 101.3, 10, True, 0.04, True,
                              12)
 VenusAtmosphere = Atmosphere("Вуглекислий газ (96.5%), Азот (3.5%)", 250, 465, 65, 9200, 100, False, 96.5, False, 70)
 MarsAtmosphere = Atmosphere("Вуглекислий газ (95%), Аргон (1.6%), Азот (2.7%)", 80, -60, 0.020, 0.636, 5, False, 95,
                             False, 40)
+# Створюю планети
+Mercury = Planet("Меркурій", "3.3011 × 10²³ кг", 2439.7, 58.6, 88, 57.9, "Скеляста", 167, 0, 0, EarthAtmosphere, Moon)
+Venus = Planet("Венера", "4.8675 × 10²⁴ кг", 6051.8, 243, 225, 108.2, "Скеляста", 465, 177.4, 0, VenusAtmosphere, None)
+Earth = Planet("Земля", "5.972 × 10²⁴ кг", 6371, 24, 365, 149.6, "Скеляста", 15, 23.5, 1, MarsAtmosphere, None)
+
 # Створюю зірки
 Sun = Star("Сонце", "жовтий карлик", "1.989 × 10²⁴ кг", 5778, 695700, "3.828 × 10²⁶ Вт", 4.6, 0.02, 11, 25)
 Sirius = Star("Сіріус", "біла", "2.0 × 10²⁴ кг", 9940, 1189600, "25.4 × 10²⁶ Вт", 0.2, 0.1, 16, 10)
 Betelgeuse = Star("Бетельгейзе", "червоний гігант", "1.5 × 10²⁵ кг", 3500, 887000, "1.2 × 10²⁷ Вт", 10, 0.5, 12, 30)
-# Створюю супутники
-Moon = Satellite("Місяць", 384400, "7.34 × 10²² кг", 27.3, -53, "терrestrial", "Земля", 4.5, False, 0.384)
-Europa = Satellite("Європа", 670900, "4.80 × 10²² кг", 3.5, -160, "лідний", "Юпітер", 4.5, True, 0.628)
-Titan = Satellite("Титан", 1221700, "1.35 × 10²³ кг", 15.9, -179, "газовий", "Сатурн", 4.5, True, 1.222)
+
 # Створюю різні системи.
 SolarSystemMilkyWay = SolarSystem("Сонячна система", "Сонце", 8, True, "1.0 × 10²⁴ кг", "1.0 × 10¹⁴ км", True, 1,
                                   "828,000 км/год", 4.6)
