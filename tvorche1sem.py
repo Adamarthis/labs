@@ -1,5 +1,6 @@
 import random
 
+
 class Client:
     def __init__(self, name, age, price, experience, health, profession):
         self.name = name
@@ -9,6 +10,7 @@ class Client:
         self.health = health
         self.profession = profession
 
+
 GREEN = "\033[92m"
 RED = "\033[91m"
 YELLOW = "\033[93m"
@@ -17,14 +19,6 @@ ENDG = "\033[0m"
 ORANGE = "\033[38;5;214m"
 LIGHT_GREEN = "\033[38;5;82m"
 boollist = [0,0,0,0,0,0,0,0]
-about_program_used = False
-client_used = False
-sleep_calculator_used = False
-calories_used = False
-heart_rate_zones_used = False
-imt_used = False
-water_intake_used = False
-motivation_used = False
 professions = ["лікарем","вчителем","інженером","програмістом","архітектором","юристом","дизайнером","журналістом",
     "електриком","психологом","пілотом","механіком","медсестрою","ветеринаром","офіціантом","барменом","кухарем",
     "фотографом","режисером","актором","співаком","музикантом","художником","скульптором","хіміком","біологом",
