@@ -1,9 +1,5 @@
 import random
 
-not_Exit = True
-choice = None
-
-
 class Client:
     def __init__(self, name, age, price, experience, health, profession):
         self.name = name
@@ -13,22 +9,21 @@ class Client:
         self.health = health
         self.profession = profession
 
-
-def sleep_calculator(age):
-    if age <= 2:
-        recommended_sleep = "11-14 годин"
-    elif 3 <= age <= 5:
-        recommended_sleep = "10-13 годин"
-    elif 6 <= age <= 12:
-        recommended_sleep = "9-12 годин"
-    elif 13 <= age <= 17:
-        recommended_sleep = "8-10 годин"
-    elif 18 <= age <= 64:
-        recommended_sleep = "7-9 годин"
-    else:
-        recommended_sleep = "7-8 годин"
-
-    print(f"Рекомендована тривалість сну для вашого віку ({age}): {recommended_sleep}")
+GREEN = "\033[92m"
+RED = "\033[91m"
+YELLOW = "\033[93m"
+BLUE = "\033[94m"
+ENDG = "\033[0m"
+ORANGE = "\033[38;5;214m"
+LIGHT_GREEN = "\033[38;5;82m"
+about_program_used = False
+client_used = False
+sleep_calculator_used = False
+calories_used = False
+heart_rate_zones_used = False
+imt_used = False
+water_intake_used = False
+motivation_used = False
 
 
 professions = [
@@ -185,37 +180,55 @@ part2 = [
 ]
 
 
+
+
 def motivation():
-    print(f"<{random.choice(part1)} {random.choice(part2)}>")
+    print(f"'{BLUE}<{random.choice(part1)} {random.choice(part2)}>{ENDG}")
+
+
+
 
 
 def water_intake(weight):
     water_needed = weight * 30
-    print(f"\n<Вам потрібно випити {water_needed} мл води на день.>")
+    print(f"\n{BLUE}<Вам потрібно випити {GREEN}{water_needed}{BLUE} мл води на день.>{ENDG}")
+
+
+
 
 
 def imt(weight, height):
     bmi = weight / ((height / 100) ** 2)
     if bmi < 18.5:
-        category = "<Недостатня вага>"
+        category = f"{YELLOW}<Недостатня вага>{ENDG}"
     elif 18.5 <= bmi < 24.9:
-        category = "<Норма>"
+        category = f"{LIGHT_GREEN}<Норма>{ENDG}"
     elif 25 <= bmi < 29.9:
-        category = "<Надмірна вага>"
+        category = f"{YELLOW}<Надмірна вага>{ENDG}"
     else:
-        category = "<Ожиріння>"
+        category = f"{RED}<Ожиріння>{ENDG}"
     print(category)
+
+
+
 
 
 def heart_rate_zones(age):
     max_heart_rate = 220 - age
-    print(f"Максимальна частота серцевих скорочень: {max_heart_rate} уд/хв")
-    print(f"Зона спокою (50-60%): {round(max_heart_rate * 0.50, 2)} - {round(max_heart_rate * 0.60, 2)} уд/хв")
-    print(f"Зона жироспалювання (60-70%): {round(max_heart_rate * 0.60, 2)} - {round(max_heart_rate * 0.70, 2)} уд/хв")
+    print(f"{BLUE}Максимальна частота серцевих скорочень: {GREEN}{max_heart_rate}{BLUE} уд/хв")
+    print(
+        f"Зона спокою (50-60%): {GREEN}{round(max_heart_rate * 0.50, 2)} - {round(max_heart_rate * 0.60, 2)}{BLUE} уд/хв")
+    print(
+        f"Зона жироспалювання (60-70%): {GREEN}{round(max_heart_rate * 0.60, 2)} - {round(max_heart_rate * 0.70, 2)}{BLUE} уд/хв")
+    print(
+        f"Аеробна зона (80-90%): {GREEN}{round(max_heart_rate * 0.80, 2)} - {round(max_heart_rate * 0.90, 2)}{BLUE} уд/хв")
+    print(
+        f"Анаеробна зона (90-95%): {GREEN}{round(max_heart_rate * 0.90, 2)} - {round(max_heart_rate * 0.95, 2)}{BLUE} уд/хв")
+    print(
+        f"Червона зона (95-100%): {GREEN}{round(max_heart_rate * 0.95, 2)} - {round(max_heart_rate * 1.00, 2)}{BLUE} уд/хв{ENDG}")
 
-    print(f"Аеробна зона (80-90%): {round(max_heart_rate * 0.80, 2)} - {round(max_heart_rate * 0.90, 2)} уд/хв")
-    print(f"Анаеробна зона (90-95%): {round(max_heart_rate * 0.90, 2)} - {round(max_heart_rate * 0.95, 2)} уд/хв")
-    print(f"Червона зона (95-100%): {round(max_heart_rate * 0.95, 2)} - {round(max_heart_rate * 1.00, 2)} уд/хв")
+
+
 
 
 def calories(weight, activity, duration):
@@ -226,45 +239,74 @@ def calories(weight, activity, duration):
                      "ходьба": 0.035,
                      "тренажери": 0.055}
     if activity not in activity_data:
-        print(f"{activity} немає в списку можливих активностей")
+        print(f"{RED}{activity} немає в списку можливих активностей{ENDG}")
     else:
-        print(f"Ви спалили {round(weight * activity_data[activity] * duration, 2)} за {duration} хвилин")
+        print(f"{BLUE}Ви спалили {GREEN}{round(weight * activity_data[activity] * duration, 2)}{BLUE} за"
+              f" {GREEN}{duration}{BLUE} хвилин{ENDG}")
 
 
-while not_Exit:
-    print("<Оберіть пункт меню>\n<1. Потрібна мотивація?>\n"
-          "<2. Калькулятор ІМТ >\n"
-          "<3. Калькулятор обʼєму води на вагу>\n"
-          "<4. Калькулятор ЧСС>\n"
-          "<5. Калькулятор спалення калорій >\n"
-          "<6. Знайти клієнта>\n"
-          "<7. Калькулятор сну>\n"
-          "<8. Про програму>\n"
-          "<0. Вихід >")
+
+
+
+def sleep_calculator(age):
+    if age <= 2:
+        recommended_sleep = f"{GREEN}11-14 годин{ENDG}"
+    elif 3 <= age <= 5:
+        recommended_sleep = f"{GREEN}10-13 годин{ENDG}"
+    elif 6 <= age <= 12:
+        recommended_sleep = f"{YELLOW}9-12 годин{ENDG}"
+    elif 13 <= age <= 17:
+        recommended_sleep = f"{YELLOW}8-10 годин{ENDG}"
+    elif 18 <= age <= 64:
+        recommended_sleep = f"{RED}7-9 годин{ENDG}"
+    else:
+        recommended_sleep = f"{RED}7-8 годин{ENDG}"
+    print(f"{BLUE}Рекомендована тривалість сну для вашого віку ({age}): {recommended_sleep}{ENDG}")
+
+
+
+
+while True:
+    print(f"{LIGHT_GREEN}<Оберіть пункт меню>\n"
+          f"<{BLUE}1.{ORANGE if motivation_used else LIGHT_GREEN} Потрібна мотивація?{RED}(Багаторазове використання!){LIGHT_GREEN}🤔>\n"
+          f"<{BLUE}2.{ORANGE if imt_used else LIGHT_GREEN} Калькулятор ІМТ🍴>\n"
+          f"<{BLUE}3.{ORANGE if water_intake_used else LIGHT_GREEN} Калькулятор обʼєму води на вагу💧>\n"
+          f"<{BLUE}4.{ORANGE if heart_rate_zones_used else LIGHT_GREEN} Калькулятор ЧСС❤️>\n"
+          f"<{BLUE}5.{ORANGE if calories_used else LIGHT_GREEN} Калькулятор спалення калорій🏃️>\n"
+          f"<{BLUE}6.{ORANGE if client_used else LIGHT_GREEN} Знайти клієнта🧑‍💻>\n"
+          f"<{BLUE}7.{ORANGE if sleep_calculator_used else LIGHT_GREEN} Калькулятор сну💤>\n"
+          f"<{BLUE}8.{ORANGE if about_program_used else LIGHT_GREEN} Про програму🤖>\n"
+          f"<{BLUE}0.{LIGHT_GREEN} Вихід❌️>{ENDG}")
     choice = int(input())
 
     if choice == 0:
-        print("<Допобачення! Дякую, що скористувались послугами програми!👋 >")
-        not_Exit = False
+        print(f"{BLUE}<Допобачення! Дякую, що скористувались послугами програми!👋>{ENDG}")
+        exit()
 
     elif choice == 1:
+        motivation_used = True
         motivation()
 
     elif choice == 2:
+        water_intake = True
         imt(float(input("Введіть вашу вагу>>")), float(input("Введість ваш зріст>>")))
 
     elif choice == 3:
+        imt_used = True
         water_intake(float(input("Введіть вашу вагу>>")))
 
     elif choice == 4:
+        heart_rate_zones_used = True
         heart_rate_zones(int(input("Введіть ваш вік>>")))
 
     elif choice == 5:
+        calories_used = True
         calories(float(input("Введіть вашу вагу>>")), input(
-            "Можливі активності: \nбіг, плавання, їзда на велосипеді, йога, ходьба, тренажери\nВведіть активність>>"),
+            f"{GREEN}Можливі активності: \nбіг, плавання, їзда на велосипеді, йога, ходьба, тренажери{ENDG}\nВведіть активність>>"),
                  float(input("Введіть час виконання вправи (в хвилинах) >>")))
 
     elif choice == 6:
+        client_used = True
         age = random.randint(25, 70)
         client = Client(random.choice(names), age, random.randint(3000, 50000),
                         random.randint(0, 40) if age > 60 else random.randint(0, 13),
@@ -288,11 +330,12 @@ while not_Exit:
                   f" {client.age} {rokiv2}. Зарплатня: {client.price} і працює "
                   f"{'аж ' + str(client.experience) if client.experience > 10 else client.experience} "
                   f"{rokiv} {client.profession}")
-
     elif choice == 7:
+        sleep_calculator_used = True
         sleep_calculator(int(input("Введіть ваш вік>>")))
-
     elif choice == 8:
+        about_program_used = True
         print(
-            "Програма написана для творчого завдання з Основ програмування студентом Ковальчук Адам 122 1 курс. "
-            "Всі збіги, крім імені студента, який виконував роботу, випадкові! Гарного Вам дня!")
+            f"{BLUE}<Програма написана для творчого завдання з Основ програмування студентом Ковальчук Адам 122 1 курс.🎓📘\n"
+            f"Всі збіги, крім імені студента, який виконував роботу, випадкові!😄✨\n"
+            f"Гарного Вам дня!☀️🌈😊>{ENDG}")
