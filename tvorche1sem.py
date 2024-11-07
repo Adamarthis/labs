@@ -108,7 +108,7 @@ def sleep_calculator(age):
     print(f"{BLUE}Рекомендована тривалість сну для вашого віку ({age}): {recommended_sleep}{ENDG}")
 
 while True:
-    print(f"{LIGHT_GREEN}<Оберіть пункт меню>\n"
+    print(f"{LIGHT_GREEN}<МЕНЮ ДЛЯ ТРЕНЕРА>\n"
           f"<{BLUE}1.{ORANGE if bool(boollist[0]) else LIGHT_GREEN} Потрібна мотивація?🤔{RED}(Різноманітні відповіді!){LIGHT_GREEN}>\n"
           f"<{BLUE}2.{ORANGE if bool(boollist[1]) else LIGHT_GREEN} Калькулятор ІМТ🍴{LIGHT_GREEN}>\n"
           f"<{BLUE}3.{ORANGE if bool(boollist[2]) else LIGHT_GREEN} Калькулятор обʼєму води на вагу💧{LIGHT_GREEN}>\n"
@@ -118,30 +118,34 @@ while True:
           f"<{BLUE}7.{ORANGE if bool(boollist[6]) else LIGHT_GREEN} Калькулятор сну💤{LIGHT_GREEN}>\n"
           f"<{BLUE}8.{ORANGE if bool(boollist[7]) else LIGHT_GREEN} Про програму🤖{LIGHT_GREEN}>\n"
           f"<{BLUE}0.{LIGHT_GREEN} Вихід❌️>{ENDG}")
-    choice = int(input())
+    choice = int(input(f"{LIGHT_GREEN}Оберіть функцію з меню >>{ENDG}"))
     if choice == 0:
         print(f"{BLUE}<Допобачення! Дякую, що скористувались послугами програми!👋>{ENDG}")
         exit()
     elif choice == 1:
         boollist[0]=1
         motivation()
+        input(f"{LIGHT_GREEN}Щоб продовжити, натисніть Enter{ENDG}")
     elif choice == 2:
         boollist[1]=1
         imt(float(input("Введіть вашу вагу>>")), float(input("Введість ваш зріст>>")))
+        input(f"{LIGHT_GREEN}Щоб продовжити, натисніть Enter{ENDG}")
     elif choice == 3:
         boollist[2]=1
         water_intake(float(input("Введіть вашу вагу>>")))
+        input(f"{LIGHT_GREEN}Щоб продовжити, натисніть Enter{ENDG}")
     elif choice == 4:
         boollist[3]=1
         heart_rate_zones(int(input("Введіть ваш вік>>")))
+        input(f"{LIGHT_GREEN}Щоб продовжити, натисніть Enter{ENDG}")
     elif choice == 5:
         boollist[4]=1
-        calories(float(input("Введіть вашу вагу>>")), input(
-            f"{GREEN}Можливі активності: \nбіг, плавання, їзда на велосипеді, йога, ходьба, тренажери{ENDG}\nВведіть активність>>"),
+        calories(float(input("Введіть вашу вагу>>")),
+                 input(f"{GREEN}Можливі активності: \nбіг, плавання, їзда на велосипеді,йога, ходьба, тренажери{ENDG}\nВведіть активність>>"),
                  float(input("Введіть час виконання вправи (в хвилинах) >>")))
+        input(f"{LIGHT_GREEN}Щоб продовжити, натисніть Enter{ENDG}")
     elif choice == 6:
         boollist[5]=1
-        print("6 пукнт активовано")
         age = random.randint(25, 70)
         client = Client(random.choice(names), age, random.randint(3000, 50000),
                         random.randint(0, 40) if age > 60 else random.randint(0, 13),
@@ -165,12 +169,18 @@ while True:
               f" {client.age} {rokiv2}. Зарплатня: {client.price} і працює "
               f"{'аж ' + str(client.experience) if client.experience > 10 else client.experience} "
               f"{rokiv} {client.profession}")
+        input(f"{LIGHT_GREEN}Щоб продовжити, натисніть Enter{ENDG}")
     elif choice == 7:
         boollist[6]=1
         sleep_calculator(int(input("Введіть ваш вік>>")))
+        input(f"{LIGHT_GREEN}Щоб продовжити, натисніть Enter{ENDG}")
     elif choice == 8:
         boollist[7]=1
         print(
             f"{BLUE}<Програма написана для творчого завдання з Основ програмування студентом Ковальчук Адам 122 1 курс.🎓📘\n"
             f"Всі збіги, крім імені студента, який виконував роботу, випадкові!😄✨\n"
-            f"Гарного Вам дня!☀️🌈😊>{ENDG}")
+            f"Гарного Вам дня!☀️😊🍄>{ENDG}")
+        input(f"{LIGHT_GREEN}Щоб продовжити, натисніть Enter{ENDG}")
+    else:
+        print(f"{RED}ПУНКТ НЕ ІСНУЄ!{ENDG}")
+        input(f"{LIGHT_GREEN}Щоб продовжити, натисніть Enter{ENDG}")
