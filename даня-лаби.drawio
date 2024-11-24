@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.0">
   <diagram name="Страница — 1" id="AL9f2triFHX439vPIHJy">
-    <mxGraphModel dx="1180" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="814" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,7 +11,7 @@
           <mxGeometry x="430" y="100" width="40" height="40" as="geometry" />
         </mxCell>
         <mxCell id="yVyBqC-tPB4_G3ObJPOv-3" value="x10" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="660" y="200" width="40" height="40" as="geometry" />
+          <mxGeometry x="660" y="230" width="40" height="40" as="geometry" />
         </mxCell>
         <mxCell id="yVyBqC-tPB4_G3ObJPOv-4" value="x4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="460" y="240" width="40" height="40" as="geometry" />
@@ -207,7 +207,7 @@
             <mxPoint x="440" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="yVyBqC-tPB4_G3ObJPOv-39" value="v27" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="yVyBqC-tPB4_G3ObJPOv-3" target="yVyBqC-tPB4_G3ObJPOv-5">
+        <mxCell id="yVyBqC-tPB4_G3ObJPOv-39" value="v27" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="yVyBqC-tPB4_G3ObJPOv-3" target="yVyBqC-tPB4_G3ObJPOv-4">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="410" as="sourcePoint" />
             <mxPoint x="440" y="360" as="targetPoint" />
