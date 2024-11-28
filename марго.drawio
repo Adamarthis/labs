@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.3">
   <diagram name="Страница — 1" id="NrcCBX_CrroJCDgv4KbC">
-    <mxGraphModel dx="2007" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3187" dy="1492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -647,16 +647,14 @@
         <mxCell id="HCiZNNdA7jjDMF_mCioQ-162" value="show_shopping_list" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="1380" y="1025" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="HCiZNNdA7jjDMF_mCioQ-217" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-163" target="HCiZNNdA7jjDMF_mCioQ-218">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="927" y="1435" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-248" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-163" target="HCiZNNdA7jjDMF_mCioQ-247">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HCiZNNdA7jjDMF_mCioQ-163" value="append_shopping_list" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="907" y="1370" width="40" height="40" as="geometry" />
+          <mxGeometry x="1390" y="1610" width="40" height="40" as="geometry" />
         </mxCell>
         <mxCell id="HCiZNNdA7jjDMF_mCioQ-164" value="remove_from_shopping_list" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1312.5" y="1580" width="50" height="50" as="geometry" />
+          <mxGeometry x="917" y="1625" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="HCiZNNdA7jjDMF_mCioQ-233" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-165" target="HCiZNNdA7jjDMF_mCioQ-232">
           <mxGeometry relative="1" as="geometry" />
@@ -799,45 +797,10 @@
         <mxCell id="HCiZNNdA7jjDMF_mCioQ-214" value="show_shopping_list" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="1380" y="1290" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="HCiZNNdA7jjDMF_mCioQ-219" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-218" target="HCiZNNdA7jjDMF_mCioQ-221">
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-225" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="HCiZNNdA7jjDMF_mCioQ-224">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1007" y="1475" as="targetPoint" />
+            <mxPoint x="1096.230769230769" y="1495" as="sourcePoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="HCiZNNdA7jjDMF_mCioQ-226" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-218" target="HCiZNNdA7jjDMF_mCioQ-227">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="837" y="1475" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="HCiZNNdA7jjDMF_mCioQ-218" value="item in shopping_list" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="887" y="1425" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="HCiZNNdA7jjDMF_mCioQ-225" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-221" target="HCiZNNdA7jjDMF_mCioQ-224">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <UserObject label="shopping_list.remove(item)" link="shopping_list.remove(item)" id="HCiZNNdA7jjDMF_mCioQ-221">
-          <mxCell style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-            <mxGeometry x="1015" y="1435" width="162.5" height="60" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="HCiZNNdA7jjDMF_mCioQ-229" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-224" target="HCiZNNdA7jjDMF_mCioQ-228">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="HCiZNNdA7jjDMF_mCioQ-224" value="&quot;{item} видалено." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1031.38" y="1535" width="131.25" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="HCiZNNdA7jjDMF_mCioQ-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-227" target="HCiZNNdA7jjDMF_mCioQ-228">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1002" y="1565" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="HCiZNNdA7jjDMF_mCioQ-227" value="Інгредієнт не знайдено." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="867" y="1535" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="HCiZNNdA7jjDMF_mCioQ-228" value="append_shopping_list" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="982" y="1646.66" width="40" height="40" as="geometry" />
         </mxCell>
         <mxCell id="HCiZNNdA7jjDMF_mCioQ-234" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-232" target="HCiZNNdA7jjDMF_mCioQ-235">
           <mxGeometry relative="1" as="geometry">
@@ -858,6 +821,75 @@
         </mxCell>
         <mxCell id="HCiZNNdA7jjDMF_mCioQ-235" value="recommendations[product_num][a]" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="1177.5" y="1525" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-237" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" target="HCiZNNdA7jjDMF_mCioQ-240" source="HCiZNNdA7jjDMF_mCioQ-164">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="947" y="1720" as="targetPoint" />
+            <mxPoint x="947" y="1695" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-238" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-240" target="HCiZNNdA7jjDMF_mCioQ-241">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1022" y="1743.34" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-239" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-240" target="HCiZNNdA7jjDMF_mCioQ-245">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="852" y="1743.34" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-240" value="item in shopping_list" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="902" y="1693.34" width="80" height="80" as="geometry" />
+        </mxCell>
+        <UserObject label="shopping_list.remove(item)" link="shopping_list.remove(item)" id="HCiZNNdA7jjDMF_mCioQ-241">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="1030" y="1703.34" width="162.5" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-242" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-243" target="HCiZNNdA7jjDMF_mCioQ-255">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1017" y="1915" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-243" value="&quot;{item} видалено." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1046.38" y="1803.34" width="131.25" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-244" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-245" target="HCiZNNdA7jjDMF_mCioQ-255">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1017" y="1833" />
+            </Array>
+            <mxPoint x="1017" y="1915" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-245" value="Інгредієнт не знайдено." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="882" y="1803.34" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-250" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-247" target="HCiZNNdA7jjDMF_mCioQ-249">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-247" value="item" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1350.01" y="1680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-252" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-249" target="HCiZNNdA7jjDMF_mCioQ-251">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="shopping_list.append(item)" link="shopping_list.append(item)" id="HCiZNNdA7jjDMF_mCioQ-249">
+          <mxCell style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="1350" y="1764" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-254" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HCiZNNdA7jjDMF_mCioQ-251" target="HCiZNNdA7jjDMF_mCioQ-253">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-251" value="{item} додано до списку." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="1840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-253" value="append_shopping_list" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1390.01" y="1920" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HCiZNNdA7jjDMF_mCioQ-255" value="remove_from_shopping_list" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="992" y="1910" width="50" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
