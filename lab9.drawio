@@ -1,9 +1,86 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.9">
   <diagram name="Страница — 1" id="qWGQlonzMjsD8kdflMPy">
-    <mxGraphModel>
+    <mxGraphModel dx="1728" dy="943" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q6LoFRK1cY-GSkwzo7A9-1" target="Q6LoFRK1cY-GSkwzo7A9-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-1" value="Початок" style="rounded=1;whiteSpace=wrap;html=1;arcSize=32;" vertex="1" parent="1">
+          <mxGeometry x="330" y="30" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q6LoFRK1cY-GSkwzo7A9-2" target="Q6LoFRK1cY-GSkwzo7A9-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-2" value="import random" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="342.5" y="100" width="65" height="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q6LoFRK1cY-GSkwzo7A9-4" target="Q6LoFRK1cY-GSkwzo7A9-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-4" value="Створюю пустий список&lt;div&gt;list = []&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="332.5" y="260" width="85" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-9" value="False" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q6LoFRK1cY-GSkwzo7A9-7" target="Q6LoFRK1cY-GSkwzo7A9-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-13" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q6LoFRK1cY-GSkwzo7A9-7" target="Q6LoFRK1cY-GSkwzo7A9-12">
+          <mxGeometry x="-0.4884" y="10" relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-7" value="Останній елемент&lt;div&gt;діапазону (0, 5) досягнуто?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="273.75" y="330" width="202.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q6LoFRK1cY-GSkwzo7A9-10" target="Q6LoFRK1cY-GSkwzo7A9-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="530" />
+              <mxPoint x="220" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-10" value="В список додається список, який створюється генератором списку&lt;div&gt;з псевдорандомними числами від 0 до 100, і також довжиною від 0 до 100&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="465" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-15" value="False" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q6LoFRK1cY-GSkwzo7A9-12" target="Q6LoFRK1cY-GSkwzo7A9-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-28" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q6LoFRK1cY-GSkwzo7A9-12" target="Q6LoFRK1cY-GSkwzo7A9-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-12" value="Останній елемент&lt;div&gt;lists досягнуто?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="340" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q6LoFRK1cY-GSkwzo7A9-14" target="Q6LoFRK1cY-GSkwzo7A9-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="480" />
+              <mxPoint x="510" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-14" value="Номер масива,&lt;br&gt;Його зміст" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="545" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q6LoFRK1cY-GSkwzo7A9-19" target="Q6LoFRK1cY-GSkwzo7A9-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-19" value="Створюю функції&amp;nbsp;&lt;div&gt;task_1,&lt;br&gt;task2&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="170" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-27" value="Останній елемент&lt;div&gt;lists досягнуто?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="340" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6LoFRK1cY-GSkwzo7A9-29" value="Приклади виконання завдання 1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="335" width="110" height="90" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
