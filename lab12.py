@@ -2,6 +2,8 @@ arr2D =[]
 is_ok = True
 class IncorrectRowLen(Exception):
     pass
+class TooMany(Exception):
+    pass
 while is_ok:
     try:
         with open("arraydata.txt") as file:
@@ -23,12 +25,16 @@ while is_ok:
         print("Помилка, нерівна довжина рядків.")
         exit()
 m = len(arr2D[0])
-with open("result.txt", "w") as file:
-    file.write("2D ARRAY:\n")
-    for i in arr2D:
-        for k in i:
-            file.write(str(k) + " ")
-        file.write("\n")
+try:
+    with open("result.txt", "w") as file:
+        file.write("2D ARRAY:\n")
+        for i in arr2D:
+            for k in i:
+                 raise TooMany if k > 1000 or k < -1000 else file.write(str(k) + " ")
+            file.write("\n")
+except TooMany:
+    print("Помилка, занадто велике число")
+    exit()
 with open("result.txt", "a") as file:
     file.write("\nTask 1:\n")
     for num, i in enumerate(arr2D, 2):
