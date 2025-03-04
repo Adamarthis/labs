@@ -1,9 +1,249 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.15">
   <diagram name="Страница — 1" id="M7V9i1bVvHuWxHPXsJk9">
-    <mxGraphModel>
+    <mxGraphModel dx="1841" dy="1014" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-1" target="nHbbqDIPlOKwS2UlzM8q-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-1" value="Початок" style="rounded=1;whiteSpace=wrap;html=1;arcSize=35;" vertex="1" parent="1">
+          <mxGeometry x="330" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-2" target="nHbbqDIPlOKwS2UlzM8q-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-2" value="m, n" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="320" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-4" target="nHbbqDIPlOKwS2UlzM8q-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-4" value="arr =&amp;nbsp;[[random.randint(-1000, 1000) for k in range(n)] for i in range(m)]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="380" width="390" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-6" target="nHbbqDIPlOKwS2UlzM8q-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-6" value="Згенерований 2D масив:" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="440" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-10" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-8" target="nHbbqDIPlOKwS2UlzM8q-12">
+          <mxGeometry x="-0.0909" relative="1" as="geometry">
+            <mxPoint x="530" y="563" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-15" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-8" target="nHbbqDIPlOKwS2UlzM8q-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="562.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-8" value="Останній елемент arr переглянуто?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="505" width="130" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-12" target="nHbbqDIPlOKwS2UlzM8q-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="562.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-12" value="A, B" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="549" width="60" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-14" target="nHbbqDIPlOKwS2UlzM8q-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-14" value="count = 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="548.5" width="70" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-17" target="nHbbqDIPlOKwS2UlzM8q-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="640" />
+              <mxPoint x="390" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-17" value="Елемент" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="543.5" width="80" height="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-22" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-20" target="nHbbqDIPlOKwS2UlzM8q-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-28" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-20" target="nHbbqDIPlOKwS2UlzM8q-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="625" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-20" value="Останній елемент arr переглянуто?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="600" width="130" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-23" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-21" target="nHbbqDIPlOKwS2UlzM8q-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="930" y="657.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-32" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-21" target="nHbbqDIPlOKwS2UlzM8q-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="658" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-21" value="Останній елемент елементу arr переглянуто?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="600" width="130" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-25" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-24" target="nHbbqDIPlOKwS2UlzM8q-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="657.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-33" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-24" target="nHbbqDIPlOKwS2UlzM8q-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="735" />
+              <mxPoint x="805" y="735" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-24" value="g%A==0&amp;nbsp;&lt;div&gt;і&lt;/div&gt;&lt;div&gt;g%B!=0?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="617.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-26" target="nHbbqDIPlOKwS2UlzM8q-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1050" y="580" />
+              <mxPoint x="805" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-26" value="count +=1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="643.75" width="70" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-30" target="nHbbqDIPlOKwS2UlzM8q-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-30" value="Кількість елементів які задовільняють умову: {count}" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="522.5" y="750" width="205" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-36" target="nHbbqDIPlOKwS2UlzM8q-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-36" value="mini = arr[0]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="760" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-40" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-37" target="nHbbqDIPlOKwS2UlzM8q-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-37" target="nHbbqDIPlOKwS2UlzM8q-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="391" y="810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-37" value="Останній елемент arr переглянуто?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="722.5" width="130" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-41" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-39" target="nHbbqDIPlOKwS2UlzM8q-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-44" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-39" target="nHbbqDIPlOKwS2UlzM8q-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="145" y="703" />
+              <mxPoint x="305" y="703" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-39" value="min(i)&amp;lt;min(mini)?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="740" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-43" target="nHbbqDIPlOKwS2UlzM8q-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-43" value="mini = i" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="850" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-47" target="nHbbqDIPlOKwS2UlzM8q-37">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="305" y="865" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-47" value="mini" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="850" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-53" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-51" target="nHbbqDIPlOKwS2UlzM8q-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-59" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-51" target="nHbbqDIPlOKwS2UlzM8q-60">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-51" value="Останній елемент arr переглянуто?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="850" width="130" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-54" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-52" target="nHbbqDIPlOKwS2UlzM8q-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="907.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-58" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-52" target="nHbbqDIPlOKwS2UlzM8q-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="985" />
+              <mxPoint x="390" y="985" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-52" value="min(i) in i" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="867.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-56" target="nHbbqDIPlOKwS2UlzM8q-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="848" />
+              <mxPoint x="423" y="848" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-56" value="i = i.sort(reverse=True)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="877.5" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-60" target="nHbbqDIPlOKwS2UlzM8q-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-60" value="Оновлений 2D масив до Завдання 2:" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="930" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-61" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-62" target="nHbbqDIPlOKwS2UlzM8q-64">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="57.5" y="1067.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-62" value="Останній елемент arr переглянуто?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="135" y="1009.75" width="130" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="nHbbqDIPlOKwS2UlzM8q-64" target="nHbbqDIPlOKwS2UlzM8q-62">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="68" y="1150" />
+              <mxPoint x="200" y="1150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHbbqDIPlOKwS2UlzM8q-64" value="Елемент" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="27.5" y="1048.5" width="80" height="37.5" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
